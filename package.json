@@ -1,0 +1,22 @@
+{
+  "name": "send-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucassdr/send-email.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucassdr/send-email/issues"
+  },
+  "homepage": "https://github.com/lucassdr/send-email#readme",
+  "dependencies": {
+    "nodemailer": "^6.4.2"
+  }
+}
