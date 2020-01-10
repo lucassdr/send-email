@@ -4,14 +4,14 @@ let transporter = nodemailer.createTransport( {
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-        user: 'jules.schmitt@ethereal.email',
-        pass:'UdsY2yqrKD6Uhx4fVJ'
+        user: process.env.EMAIL_ACCOUNT,
+        pass: process.env.EMAIL_PASS
     }
 } )
 
 const emailSend = {
-    from: 'jules.schmitt@ethereal.email',
-    to: 'jules.schmitt@ethereal.email',
+    from: process.env.EMAIL_ACCOUNT,
+    to: process.env.EMAIL_ACCOUNT,
     subject: 'Como enviar e-mails utilizando Node.js',
     text:'Neste tutorial vocÊ está descobrindo isso.'
 }
